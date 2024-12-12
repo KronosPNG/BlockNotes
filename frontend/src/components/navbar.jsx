@@ -1,17 +1,14 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react';
 
-export default function Navbar() {
-    const [user, setUser] = useState(null);
-    const [tokenNumber, setTokenNumber] = useState(0);
+export default function Navbar({user, tokenNumber= 0}) {
 
     return (
-        <nav>
-            <div>
-                <img src="" alt="" />
+        <nav id="navbar">
+            <div id="logo-wrapper">
+                <img src="" alt="" id="logo"/>
             </div>
             
-            <ul>
+            <ul id="nav-links">
                 <li>
                     <a href="#explore">Esplora</a>
                 </li>
@@ -22,7 +19,7 @@ export default function Navbar() {
                 </li>
             </ul>
 
-            <div>
+            <div id="tokenotes-counter">
                 <img src="" alt="" />
 
                 <p>
@@ -30,7 +27,7 @@ export default function Navbar() {
                 </p>
             </div>
 
-            <div>
+            <div id="login-wrapper">
                 <button>
                     <img src="" alt="" />
 
